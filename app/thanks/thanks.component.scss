@@ -1,0 +1,36 @@
+section{
+    font-family: 'Manrope', sans-serif;
+    border-radius: 12px;
+    background-color: hsl(213, 19%, 18%);
+
+    #boxImage{
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #boxParagraph1{
+        font-family: 'Manrope', sans-serif;
+        text-align: center;
+
+        p{
+            color: hsl(25, 97%, 53%);
+            padding: 20px;
+        }
+    
+    }
+
+    h2{
+        font-family: 'Manrope', sans-serif;
+        text-align: center;
+        color: white;
+    }
+
+    p{
+        font-family: 'Manrope', sans-serif;
+        color: hsl(217, 12%, 63%);
+        padding: 30px;
+    }
+    
+}

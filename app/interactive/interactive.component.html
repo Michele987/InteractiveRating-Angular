@@ -1,0 +1,38 @@
+<section>
+
+    <div id="boxInteractive" *ngIf="interactiveVisible">
+
+        <div id="wrapperStar">
+
+          <div id="boxStar">
+
+             <img src="./../../assets/icon-star.svg" alt="Feedback star">
+
+          </div>
+
+       </div>
+
+        <p id="paragraph1">How did we do?</p>
+
+        <p id="paragraph2">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+
+        <div id="boxNumbers">
+
+            <div class="answer" *ngFor="let answer of availableAnswers" (click)="selectAnswer(answer)" [ngClass]="{ 'answerSelected': answer == selectedAnswer, 'answerNotSelected': answer != selectedAnswer }">
+                {{ answer }}
+            </div>
+
+
+        </div>
+
+        <div id="boxSubmit">
+
+            <button (click) = "openClose()"> Submit </button>
+
+        </div>
+
+    </div>
+
+    <app-thanks *ngIf="thanksVisible" [rating]="selectedAnswer"></app-thanks>
+
+</section>
